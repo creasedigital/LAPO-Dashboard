@@ -47,9 +47,9 @@ const links = [
 
 export function Sidebar() {
 	return (
-		<aside className="w-[230px] h-full bg-[#002F6C] text-[#D0D5DD] p-4">
-			<img src={lapo} alt="Logo" className="w-[138.32px] mb-4" />
-			<nav className="space-y-4">
+		<aside className="w-[230px] h-full bg-[#002F6C] text-[#D0D5DD] p-6">
+			<img src={lapo} alt="Logo" className="w-[138.32px] pb-4" />
+			<nav className="space-y-5">
 				{links.map((item) =>
 					"divider" in item ? (
 						<div

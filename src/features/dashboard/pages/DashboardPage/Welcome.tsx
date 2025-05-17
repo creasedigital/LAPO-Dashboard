@@ -2,7 +2,7 @@ import CalendarIcon from "@/assets/images/calendar.png";
 
 const Welcome = () => {
 	return (
-		<div className="flex justify-between items-start mt-2 mb-[13px] w-full text-[#121212]">
+		<div className="flex justify-between items-start mt-2 mb-[13px] w-full text-[#121212] pr-5">
 			<div className="flex flex-col gap-1.5">
 				<h4 className="leading-6 tracking-normal text-lg font-bold">
 					Hi Nazeer, what would you like to do today?

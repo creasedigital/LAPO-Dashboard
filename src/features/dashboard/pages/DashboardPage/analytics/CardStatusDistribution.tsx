@@ -21,7 +21,7 @@ const CardStatusDistributionContent = () => {
 	const sortedLegend = [...data].sort((a, b) => b.value - a.value);
 
 	return (
-		<div className="w-full h-56 relative flex items-center justify-center">
+		<div className="w-full h-[260px] relative flex items-center justify-center">
 			<ResponsiveContainer width="100%" height="100%">
 				<PieChart>
 					<Pie
@@ -51,7 +51,7 @@ const CardStatusDistributionContent = () => {
 				</p>
 			</div>
 
-			<div className="absolute -bottom-8 w-full flex justify-center gap-4 flex-wrap mt-4">
+			<div className="absolute -bottom-0 w-full flex justify-center gap-4 flex-wrap mt-4">
 				{sortedLegend.map((item) => (
 					<div
 						key={item.name}

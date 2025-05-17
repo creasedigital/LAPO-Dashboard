@@ -22,7 +22,9 @@ const Analytics = () => {
 			</div>
 			<div className="flex w-full gap-2 space-y-2">
 				<ThisWeeksIncome />
+        <div className="pt-2">
 				<CardStatusDistribution />
+        </div>
 			</div>
 		</div>
   );

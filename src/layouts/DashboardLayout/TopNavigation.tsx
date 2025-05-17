@@ -7,7 +7,7 @@ import UserIcon from "@/assets/images/user-01.png";
 const TopNavigation = () => {
 	return (
 		<header
-			className="flex justify-between items-center h-[48px] pl-5 pr-2 border border-[#DEDEDF]"
+			className="flex justify-between items-center h-[48px] pl-5  border border-[#DEDEDF]"
 			style={{ width: "calc(100vw - 230px)" }}
 		>
 			<div className="flex items-center gap-2">
@@ -41,7 +41,7 @@ const TopNavigation = () => {
 						className="w-5 h-5"
 					/>
 				</button>
-        <button type="button" className="cursor-pointer w-8 h-8 bg-[#F2F4F7] items-center justify-center rounded-full flex">
+        <button type="button" className="cursor-pointer w-8 h-8 bg-[#F2F4F7] mr-5 items-center justify-center rounded-full flex">
 					<img src={UserIcon} alt="user icon" className="w-5 h-5" />
         </button>
 			</div>
