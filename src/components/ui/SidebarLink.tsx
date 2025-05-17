@@ -12,10 +12,10 @@ export function SidebarLink({ to, icon: Icon, label }: SidebarLinkProps) {
 		<NavLink
 			to={to}
 			className={({ isActive }) =>
-				`block px-4 py-2 rounded text-xs  ${
+				`block px-3 py-2 rounded text-xs  ${
 					isActive
 						? "mx-3 bg-[#E4F0FF] text-[#014DAF] border-[0.6px] border-[#AEBAC9] "
-						: "hover:bg-gray-800 hover:text-[#E4F0FF] text-[#D0D5DD]"
+						: "mx-3 hover:bg-gray-800 hover:text-[#E4F0FF] text-[#D0D5DD]"
 				}`
 			}
 		>
