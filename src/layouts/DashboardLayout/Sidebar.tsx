@@ -18,8 +18,6 @@ import {
 	UsersIcon,
 } from "@/icons";
 
-
-
 const links = [
 	{ to: "/", label: "Dashboard", icon: HomeIcon },
 	{ divider: "Main Menu" },
@@ -47,14 +45,14 @@ const links = [
 
 export function Sidebar() {
 	return (
-		<aside className="w-[230px] h-full bg-[#002F6C] text-[#D0D5DD] p-6">
+		<aside className="w-[230px] relative min-h-full bg-[#002F6C] text-[#D0D5DD] py-6">
 			<img src={lapo} alt="Logo" className="w-[138.32px] pb-4" />
-			<nav className="space-y-5">
+			<nav className="space-y-[14px]">
 				{links.map((item) =>
 					"divider" in item ? (
 						<div
 							key={item.divider}
-							className="mt-[14px] text-xs tracking-[0%] uppercase text-[#D0D5DD]"
+							className="mt-[14px] pl-[28px] text-[8.5px] leading-4.5 font-medium tracking-[0%] uppercase text-[#7E8B9C]"
 						>
 							{item.divider}
 						</div>
@@ -70,12 +68,19 @@ export function Sidebar() {
 
 				<button
 					type="button"
-					className="w-full bg-transparent flex items-center text-xs font-medium tracking-[0%] mt-[123px] mb-[44px] gap-2 px-4 py-2 rounded hover:bg-gray-800 "
+					className="w-full bg-transparent flex items-center text-xs font-medium tracking-[0%] mt-[123px] gap-2 px-4 py-2 rounded hover:bg-gray-800 "
 				>
-					<LogoutIcon  /> Logout
+					<LogoutIcon /> Logout
 				</button>
-				<div>
-			<img src={CardInfraHq} alt="Developing Partner Logo" className="w-32 mb-4" />
+				<div className="absolute bottom-[30px] left-5 ">
+					<p className="  text-[8.5px] leading-4.5 font-medium tracking-[0%] uppercase text-[#7E8B9C]">
+						POWERED BY
+					</p>
+					<img
+						src={CardInfraHq}
+						alt="Developing Partner Logo"
+						className="w-[93.33px]"
+					/>
 				</div>
 			</nav>
 		</aside>

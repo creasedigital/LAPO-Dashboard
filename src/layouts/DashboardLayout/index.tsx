@@ -10,7 +10,7 @@ export function DashboardLayout() {
 			<Sidebar />
 			<div className="flex-1 flex flex-col overflow-hidden">
 				<TopNavigation />
-				<main className="flex-1 bg-[#F8FBFF] px-5 overflow-auto overflow-x-hidden overflow-y-auto">
+				<main className="flex-1 bg-[#F8FBFF] px-5 pb-5 overflow-auto overflow-x-hidden overflow-y-auto">
 					<Outlet />
 				</main>
 			</div>
