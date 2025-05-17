@@ -60,18 +60,18 @@ const statusStyles: Record<
 	{ bg: string; text: string; border: string }
 > = {
 	Ready: {
-		text: "text-[#014DAF]",
-		bg: "bg-[#ABEFC6]",
+		text: "text-[#067647]",
+		bg: "bg-[#ECFDF3]",
 		border: "border-[#ABEFC6]",
 	},
 	"In Progress": {
 		text: "text-[#B54708]",
-		bg: "bg-[#FEDF89]",
+		bg: "bg-[#FFFAEB]",
 		border: "border-[#FEDF89]",
 	},
 	Acknowledged: {
 		text: "text-[#175CD3]",
-		bg: "bg-[#B2DDFF]",
+		bg: "bg-[#EFF8FF]",
 		border: "border-[#B2DDFF]",
 	},
 	Pending: {

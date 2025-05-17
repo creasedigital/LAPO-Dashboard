@@ -7,25 +7,28 @@ import {
 import { ChartCardWrapper } from "@/components/ui/ChartCardWrapper";
 
 const data = [
-	{ name: "Active", value: 1800, color: "#0694A2" },
-	{ name: "Expired", value: 400, color: "#FDB022" },
-	{ name: "Inactive", value: 120, color: "#004EEB" },
+	{ name: "Expired", value: 360, color: "#FDB022" },
+	{ name: "Lost", value: 60, color: "#F04438" },
 	{ name: "Blocked", value: 80, color: "#9E77ED" },
-	{ name: "Lost", value: 50, color: "#F04438" },
+	{ name: "Inactive", value: 120, color: "#004EEB" },
+	{ name: "Active", value: 1830, color: "#0694A2" },
 ];
 
 const CardStatusDistributionContent = () => {
 	const total = data.reduce((sum, item) => sum + item.value, 0);
 
+	// Sort legend by value descending
+	const sortedLegend = [...data].sort((a, b) => b.value - a.value);
+
 	return (
-		<div className="w-full h-72 relative flex items-center justify-center">
+		<div className="w-full h-56 relative flex items-center justify-center">
 			<ResponsiveContainer width="100%" height="100%">
 				<PieChart>
 					<Pie
-						data={data}
+						data={data} // chart uses original order
 						dataKey="value"
-						innerRadius={85}
-						outerRadius={95}
+						innerRadius={95}
+						outerRadius={105}
 						startAngle={90}
 						endAngle={-270}
 						cornerRadius={10}
@@ -48,8 +51,8 @@ const CardStatusDistributionContent = () => {
 				</p>
 			</div>
 
-			<div className="absolute bottom-2 w-full flex justify-center gap-4 flex-wrap mt-4">
-				{data.map((item) => (
+			<div className="absolute -bottom-8 w-full flex justify-center gap-4 flex-wrap mt-4">
+				{sortedLegend.map((item) => (
 					<div
 						key={item.name}
 						className="flex items-center gap-1 text-sm text-[#667085] font-medium"
