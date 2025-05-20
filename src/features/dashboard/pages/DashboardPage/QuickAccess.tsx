@@ -15,7 +15,7 @@ const accessType = [
 
 const QuickAccess = () => {
 	return (
-		<Card className="p-6 gap-0 ">
+		<Card className="p-6 gap-0 shadow-none">
 			<h4 className="leading-[18px] tracking-normal text-[16px] font-medium mb-[13px]">
 				Your Quick Access
 			</h4>

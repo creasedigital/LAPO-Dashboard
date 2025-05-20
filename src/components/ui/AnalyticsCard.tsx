@@ -15,7 +15,7 @@ export function AnalyticsCard({ key, title, icon: Icon, content }: AnalyticsCard
 	return (
 		<Card
 			key={key}
-			className="flex flex-col gap-0 items-start p-4 h-[110px] max-w-full w-[286.5px] rounded-[10px] shadow-none px-4 py-2 bg-white border border-[#E2E2E2]"
+			className="flex flex-col gap-0 items-start p-4 h-[110px] w-full  rounded-[10px] shadow-none px-4 py-2 bg-white border border-[#E2E2E2]"
 		>
 			<button
 				type="button"

@@ -9,7 +9,7 @@ type AccessCardProps = {
 
 export function AccessCard({ key, title, icon: Icon }: AccessCardProps) {
 	return (
-			<div key={key} className="flex items-center h-[45px] max-w-full w-[278.5px] rounded-[4px] gap-4 px-4 py-2 bg-[#F1F7FF]">
+			<div key={key} className="flex items-center h-[45px] max-w-full w-full rounded-[4px] gap-4 px-4 py-2 bg-[#F1F7FF]">
                 <button type="button" className="cursor-pointer flex items-center justify-center w-7 h-7 bg-[#014DAF] rounded-full ">
 						<img
 							src={Icon}

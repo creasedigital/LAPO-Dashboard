@@ -6,8 +6,8 @@ import AnalyticsCards from "./AnalyticsCards"
 
 const Analytics = () => {
   return (
-		<div>
-			<header className="flex w-full items-center gap-4">
+		<div className="">
+			<header className="flex w-full items-center gap-4 ">
 				<h4 className="leading-[27.44px] tracking-normal text-[18px] font-bold my-2.5">
 					Analytics
 				</h4>
@@ -20,11 +20,9 @@ const Analytics = () => {
 				<MonthlyIssuance />
 				<RecentCardRequests />
 			</div>
-			<div className="flex w-full gap-2 space-y-2">
+			<div className="flex w-full gap-2 mt-2">
 				<ThisWeeksIncome />
-        <div className="pt-2">
 				<CardStatusDistribution />
-        </div>
 			</div>
 		</div>
   );

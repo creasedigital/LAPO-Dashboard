@@ -35,8 +35,8 @@ const CardStatusDistributionContent = () => {
 						paddingAngle={1}
 						stroke="none"
 					>
-						{data.map((entry, index) => (
-							<Cell key={`cell-${index}`} fill={entry.color} />
+						{data.map((entry) => (
+							<Cell key={`cell-${entry}`} fill={entry.color} />
 						))}
 					</Pie>
 				</PieChart>
