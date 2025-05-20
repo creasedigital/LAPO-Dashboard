@@ -7,8 +7,8 @@ import UserIcon from "@/assets/images/user-01.png";
 const TopNavigation = () => {
 	return (
 		<header
-			className="flex justify-between items-center h-[48px] pl-5  border border-[#DEDEDF]"
-			style={{ width: "calc(100vw - 230px)" }}
+			className="flex justify-between items-center h-[48px] pl-5  border border-[#DEDEDF] gap-4 flex-wrap lg:flex-nowrap w-full lg:[width:calc(100vw-230px)]"
+			// style={{ width: "calc(100vw - 230px)" }}
 		>
 			<div className="flex items-center gap-2">
 				<HomeIcon />

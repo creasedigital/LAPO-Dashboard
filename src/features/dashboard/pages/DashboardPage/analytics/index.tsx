@@ -16,11 +16,11 @@ const Analytics = () => {
 			<div className="mb-2">
 				<AnalyticsCards />
 			</div>
-			<div className="flex w-full gap-2 space-y-2">
+			<div className="flex w-full gap-2 space-y-2 flex-col lg:flex-row">
 				<MonthlyIssuance />
 				<RecentCardRequests />
 			</div>
-			<div className="flex w-full gap-2 mt-2">
+			<div className="flex w-full gap-2 mt-2 flex-col lg:flex-row">
 				<ThisWeeksIncome />
 				<CardStatusDistribution />
 			</div>

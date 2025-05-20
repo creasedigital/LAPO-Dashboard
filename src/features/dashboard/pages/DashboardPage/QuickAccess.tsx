@@ -19,7 +19,7 @@ const QuickAccess = () => {
 			<h4 className="leading-[18px] tracking-normal text-[16px] font-medium mb-[13px]">
 				Your Quick Access
 			</h4>
-      <div className="flex gap-2 max-w-full">
+      <div className="flex gap-2 max-w-full flex-wrap lg:flex-nowrap">
                 {accessType.map((item) =>
 
                     <AccessCard

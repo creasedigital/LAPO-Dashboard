@@ -23,7 +23,7 @@ const analyticsType = [
 
 const AnalyticsCards = () => {
 	return (
-		<div className="flex gap-2 w-full">
+		<div className="flex gap-2 w-full flex-wrap lg:flex-nowrap">
 			{analyticsType.map((item) => (
 				<AnalyticsCard
 					key={item.title}
