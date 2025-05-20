@@ -17,7 +17,7 @@ export function AccessCard({ key, title, icon: Icon }: AccessCardProps) {
 							className="w-4 h-4"
 						/>
 					</button>
-                    <div className="flex gap-3 items-center">
+                    <div className="flex gap-3 items-center justify-between">
                         <h4 className="leading-4.5 tracking-normal text-sm font-bold">
                             {title}
                         </h4>
